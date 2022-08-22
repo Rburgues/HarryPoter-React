@@ -1,0 +1,52 @@
+.intro{
+    background-color: black;
+    height:100vh;
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ocultar 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    margin-bottom: -100vh;
+
+}
+
+@keyframes ocultar {
+    0% {
+        opacity: 1;
+    }
+  
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+  }
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
+.intro-h1{
+    font-size: 50px;
+    font-family: 'Harry Potter', sans-serif;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    padding-top: 15px;
+    animation: fade 4s;
+    animation-fill-mode: forwards;
+}
